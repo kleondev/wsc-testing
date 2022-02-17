@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProfesoresRoutingModule } from './profesores-routing.module';
 import { ProfesoresComponent } from './profesores.component';
-import { GlobalModule } from 'src/app/global/global.module';
+import { GlobalModule } from 'src/app/module/global.module';
 
 
 @NgModule({

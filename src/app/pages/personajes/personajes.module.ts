@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PersonajesRoutingModule } from './personajes-routing.module';
 import { PersonajesComponent } from './personajes.component';
-import { GlobalModule } from 'src/app/global/global.module';
+import { GlobalModule } from 'src/app/module/global.module';
 
 
 @NgModule({
