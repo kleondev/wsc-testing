@@ -65,7 +65,7 @@ export class EstudiantesComponent implements OnInit {
       switch (key) {
         case 'name': return data.name;
         case 'patronus': return data.patronus;
-        case 'age': return data.yearOfBirth > 0 ? data.yearOfBirth : "";
+        case 'age': return data.yearOfBirth > 0 ? data.yearOfBirth : 0;
         default: data[key]
       }
     };

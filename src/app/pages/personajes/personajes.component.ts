@@ -44,7 +44,6 @@ export class PersonajesComponent implements OnInit {
   }
 
   loadPersonajes() {
-    console.log(this.form.getRawValue().house);
     this.isLoading = true;
     this.personajesService.findAllPeronajes(this.form.getRawValue().house.value)
     .pipe(
@@ -64,7 +63,7 @@ export class PersonajesComponent implements OnInit {
       switch (key) {
         case 'name': return data.name;
         case 'patronus': return data.patronus;
-        case 'age': return data.dateOfBirth > 0 ? this.year - data.dateOfBirth : "";
+        case 'age': return data.yearOfBirth > 0 ? data.yearOfBirth : 0;
         default: data[key]
       }
     };
