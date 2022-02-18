@@ -31,7 +31,7 @@ export class EstudianteComponent implements OnInit {
       nombre: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(13)]],
       house: [null, [Validators.required]],
       fnacimiento: [null, [Validators.required]],
-      foto: [null, [Validators.required]],
+      foto: [null],
     });
   }
 
