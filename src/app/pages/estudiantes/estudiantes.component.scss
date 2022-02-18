@@ -1,5 +1,12 @@
+::ng-deep .mat-sort-header-container {
+  box-shadow: none !important;
+  border-bottom: 0px !important;
+}
 
-  ::ng-deep .mat-sort-header-container {
-    box-shadow: none !important;
-    border-bottom: 0px !important;
-  }
+.zoom:hover {
+  transform: scale(2);
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
