@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GlobalModule } from './module/global.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GlobalModule } from './module/global.module';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    GlobalModule
+    GlobalModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

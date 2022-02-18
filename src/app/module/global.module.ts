@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import {MatTableModule} from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [],
@@ -10,12 +12,16 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     MatTableModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   exports: [
     MatTableModule, 
     FlexLayoutModule, 
-    MatCardModule
+    MatCardModule,
+    MatSortModule,
+    MatPaginatorModule
   ]
 })
 export class GlobalModule { }
