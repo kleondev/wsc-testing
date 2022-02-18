@@ -10,6 +10,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 // MatButtonModule,
 // ,
@@ -28,7 +31,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatSelectModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     MatTableModule, 
@@ -40,7 +46,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatSelectModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ]
 })
 export class GlobalModule { }
