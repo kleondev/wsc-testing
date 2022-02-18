@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class ProfesoresService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  findAllStaff()  {
+    return this.http.get('http://hp-api.herokuapp.com/api/characters/staff');
+  }
+
 }
