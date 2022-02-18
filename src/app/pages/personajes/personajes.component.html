@@ -3,9 +3,28 @@
     <div class="content">
       <mat-card>
         <mat-card-title class="p-t-10">
-          Personajes
+          <div class="row p-l-20">
+            Personajes <mat-spinner matSuffix diameter="20" *ngIf="isLoading"></mat-spinner>
+          </div>
         </mat-card-title>
-        <div class="table-container p-t-20">
+        <form [formGroup]="form" class="p-t-20">
+          <div class="row p-l-10">
+              <div class="col-3">
+                <mat-form-field>
+                  <mat-label>House</mat-label>
+                  <mat-select formControlName="house">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let option of options" [value]="option">{{option.name}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <button mat-raised-button color="primary" (click)="loadPersonajes()" [disabled]="form.invalid || isLoading">Basic</button>
+              </div>
+          </div>
+        </form>
+     
+        <div class="table-container p-t-10">
           <table style="width: 100%;" mat-table [dataSource]="dataSource" matSort>
             <ng-container matColumnDef="name">
               <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
